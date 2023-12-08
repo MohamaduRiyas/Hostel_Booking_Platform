@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('bg img.jpeg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .google-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .google-logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        #errorText {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <img src="BIT 25 years.jpg" alt="College Logo" class="logo">
+            <h2>BIT HOSTEL ROOM BOOKING PORTAL</h2>
+        </div>
+        
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br><br>
+            <button type="button" onclick="validateLogin()">Login</button>
+        </form>
+        <p id="errorText"></p>
+
+        <div class="google-login">
+            <img src="email.png" alt="Google Logo" class="google-logo">
+            <a href="https://your-google-auth-url-here">Login using your account on Google</a>
+        </div>
+    </div>
+
+    <script>
+        function validateLogin() {
+            // Get the email and password input values
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the email contains "@bitsathy.ac.in"
+            if (email.endsWith("@bitsathy.ac.in")) {
+                // You can add your authentication logic here (e.g., check password)
+                // For simplicity, this example just redirects to index.html upon successful login
+                window.location.href = "index.html";
+            } else {
+                // Display an error message if the email domain is not "@bitsathy.ac.in"
+                document.getElementById("errorText").innerHTML = "Invalid email domain.";
+            }
+        }
+    </script>
+</body>
+</html>
