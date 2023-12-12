@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <link rel="icon" href="img/BIT 25 years.jpg" type="img">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="table.css"> <!-- Include table.css -->
+    <style >
+        
+        :root {
+            --background-color-light: #f4f4f4; /* Light theme background color */
+            --text-color-light: #333; /* Light theme text color */
+            --background-color-dark: #333; /* Dark theme background color */
+            --text-color-dark: #fff; /* Dark theme text color */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color-light);
+            color: var(--text-color-light);
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.dark-theme {
+            background-color: var(--background-color-dark);
+            color: var(--text-color-dark);
+        }
+
+        /* Add or modify your existing CSS styles here */
+        .footer {
+            background-color: #f3e2e2;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #footer p {
+            margin-top: 10px;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark/Light theme switch button */
+        #theme-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #ddd;
+            border: none;
+            border-radius: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <button id="theme-switch" onclick="toggleTheme()">Toggle Theme</button>
+
+    <div id="topbar"></div>
+    <div id="container">
+     
+
+       
+        <div id="header">
+            <img src="img/logobit.png" alt="bit">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="header">
+            <img src="img/broth.jpg" alt="Left Image" > 
+            <h1>EAT STUDY SLEEP REPEAT</h1>
+            <img src="img/panda2.webp" alt="Right Image">
+        </div>
+
+        <img src="img/m3.webp" alt="BIt" style="width:auto; height: 100px;">
+        <!-- ... (rest of your HTML content) -->
+
+        <h1>BOYS MESS MENU </h1>
+        <h2>Menu will be followed from 09-10-2023</h2>
+        <table border="3" class="center">
+            <thead>
+                <tr>
+                    <th>DAYS</th>
+                    <th>BREAK FAST</th>
+                    <th>LUNCH</th>
+                    <th>DINNER</th>
+                </tr>
+            </thead>
+                
+            <tbody>
+                <tr>
+                    <td>MONDAY</td>
+                    <td>  Idly <br>Tomato Kuruma <br>Wheat Rava Uppuma <br>Coconut Chutney <br> Idly podi + oil <br>
+                        coffe Milk
+                    </td>
+                    <td>Rice <br>DrumStick Sambar<br> Dhall Rasam <br>Potato Poriyal<br> Appalam <br>Butter Milk</td>
+                    <td>1st, 3rd Week Parota <br>2nd,4th Week Romali Rotti <br>Veg Kumruma / Channa Masala <br>Kushka <br>Curd Rice <br>Banana </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>TUESDAY</td>
+                    <td>Dosa <br>Tomato Kuruma <br>Greegram Dhall Sambar <br> Bread Uppuma <br> Coconut chutney <br>
+                        coffe Milk
+                    </td>
+                    <td>Rice <br>DrumStick Sambar<br> Dhall Rasam <br>Potato Poriyal<br> Appalam <br>Butter Milk</td>
+                    <td>Idly<br>Soya Briyani/ sevai<br>Sambar<br> Idly Podi + Oil <br>Curd Rice <br>Tomato Onion Chutney <br>Cold Badham Milk/ Ragi Malt</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>WEDNESDAY</td>
+                    <td>Ven Pongal<br>Semiya Uppuma<br>Vada <br>Moong dhall sambar <br>Coconut Chutney <br>  coffe Milk
+                    </td>
+                    <td>Samabar Sadham(Tomato/Mint Rice), <br> or Lemon rice<br>Brinji,Potato varuval <br>or Thuvayal<br> Vadagam <br>White rice<br>Butter Milk</td>
+                    <td>Jam <br>Chappathi <br>Fried Rice <br>Boiled Egg<br>Tomato Thokku<br>Curd Rice <br>Veg Salad</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>THURSDAY</td>
+                    <td>Idly <br>sweet Pongal <br>Rava Kitchadi <br>Sambar <br> Coriander Chiutney <br>
+                        coffe Milk
+                    </td>
+                    <td>Rice <br>DGreen gram Dhall/ Thatta payaru<br> Lemon Rasam <br>Carrot,beans/ Beetroot Poriyal<br> Kambhoo khool  <br>Vathal<br>Butter Milk</td>
+                    <td>Podi Dhosa/Onion Dosa <br>Noodles <br>Coconut Chiutney<br>Curd Rice <br>Banana </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>FRIDAY</td>
+                    <td>Veg Uthappam/Uthappam<br>Flavour Semiya<br>Tomato/ lemon<br>Potato Masala<br>Kara Chutney <br>Idly podi + oil <br>
+                        coffe Milk
+                    </td>
+                    <td>Rice <br>Brinji Sambar<br> Tomato Rasam <br>Parupu Vadai<br> Wheat Payasam<br>Butter Milk</td>
+                    <td>Sweet(Avul/ Ragi semiya) <br>Chappathi<br>Egg Masala/ Channa Masala <br>Jeera Rice/ Pulao<br>Curd Rice <br>Veg salad </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>SATURDAY</td>
+                    <td>Idly+ vadai <br>Avul Uppuma<br>Sambar<br>Coconut Chutney <br> Idly podi + oil<br>
+                        coffe Milk
+                    </td>
+                    <td>Rice <br>Moor Kulambu<br> Milagu Rasam <br>Meak Maker Poriyal<br> Appalam <br>Curd</td>
+                    <td>Onion Mini uthappam / Grain dhosa <br>Veg Fried Rice<br>Mint Rice<br>Sambar <br>Kara Chutney <br>Banana </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>SUNDAY</td>
+                    <td>Bread/Wheat Bread <br>Jam + Butter <br> Semiya/ Ven Pongal <br> Sambar<br> Coconut Chutney<br>
+                        coffe Milk
+                    </td>
+                    <td>Rice <br>1st week Veg Briyani<br> 2nd week Mushroom Briyani <br> 3rd week Veg Briyani<br> 4th week Egg briyani <br>Onion Raita <br>Egg gravy <br>Lemon Rasam<br>Butter Milk</td>
+                    <td>Roast <br>Sambar <br>Arisiparuppu Sadham<br>Curd Rice<br>Tomato Chutney <br>Chilled Rose Milk <br>Banana </td>
+                </tr>
+            </tbody>
+    
+        
+            <!-- Your table content here -->
+        </table>
+        <div id="content1">
+            <h4 class="heading">Welcome</h4>
+            <p class="para1">"Welcome to our website! Lorem ipsum dolor sit amet, consectetur adipisicing elit.""</p>
+            <a href="#" class="more">Read more</a>
+        </div>
+
+        <div id="content2">
+            <h4 class="heading">Services</h4>
+            <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis fuga accusamus animi esse soluta alias magni laborum aut hic delectus!</p>
+            <a href="#" class="more">Read more</a>
+        </div>
+
+        <div id="content3">
+            <h4 class="heading">About Us</h4>
+            <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis fuga accusamus animi esse soluta alias magni laborum aut hic delectus!</p>
+            <a href="#" class="more">Read more</a>
+        </div>
+
+        <div id="bottom1">
+            <h2>My Sample Website Project</h2>
+            <p><b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Architecto voluptatibus atque nemo tempore <br>similique molestias repudiandae eligendi neque excepturi incidunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum optio atque sequi similique distinctio vitae corporis officia nostrum aliquid totam.</p>
+            <a href="#">Read more..</a>
+        </div>
+
+        <div id="bottom2">
+            <h2>My Sample Website Project</h2>
+            <img src="img/cafe.jpeg" alt="cafeteria">
+        </div>
+
+
+        <!-- ... (rest of your HTML content) -->
+
+        <div class="footer">
+            <div id="footer">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <p>&copy; 2023 | Designed By MOHAMADU RIYAS</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4003578.7745648283!2d72.39658481250002!3d11.498317400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba92191e50319e1%3A0x735d2ce0a2cb105b!2sBIT%20Guest%20House!5e0!3m2!1sen!2sin!4v1701919533961!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script>
+        // JavaScript to toggle between dark and light themes
+        const body = document.body;
+
+        function toggleTheme() {
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+
+</body>
+</html>
