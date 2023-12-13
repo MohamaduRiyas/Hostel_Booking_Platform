@@ -1,0 +1,234 @@
+#topbar {
+    background-color: #1f1f1f;
+    height: 10px;
+    width: 100%;
+    color: red;
+}
+
+body {
+    background-color: white;
+}
+
+#container {
+    height: 700px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#header {
+    height: 80px;
+    background-color: #fefefe;
+}
+
+#header img {
+    height: 80px;
+}
+
+#header ul {
+    float: right;
+    margin-top: 20px;
+}
+
+#header ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+#header ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#banner img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#content1 {
+    height: 350px;
+    width: 32%;
+    background-color: aquamarine;
+    float: left;
+    margin-right: 2%;
+}
+
+#content2 {
+    width: 32%;
+    height: 350px;
+    background-color: rgb(255, 127, 200);
+    float: left;
+}
+
+#content3 {
+    height: 350px;
+    width: 32%;
+    background-color: rgb(127, 255, 142);
+    float: right;
+}
+
+.heading {
+    color: white;
+    margin-left: 20%;
+    font-size: 28px;
+}
+
+.para1 {
+    color: rgb(23, 23, 22);
+    margin-left: 20px;
+    margin-right: 5px;
+    display: inline;
+}
+
+.more {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+#bottom1 {
+    margin-top: 15px;
+    width: 60%;
+    height: 300px;
+    float: left;
+}
+
+#bottom2 {
+    margin-top: 15px;
+    width: 40%;
+    float: right;
+}
+
+#bottom1 h2 {
+    color: black;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+#bottom1 p {
+    color: black;
+}
+
+#bottom1 a {
+    margin-left: 20px;
+    color: orange;
+}
+
+#bottom2 h2 {
+    color: black;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+#bottom2 img {
+    height: 240px;
+    width: 100%;
+}
+
+#footer {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    clear: both;
+}
+
+#footer ul {
+    float: left;
+    margin-top: 20px;
+}
+
+#footer ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+#footer ul li a {
+    color: rgb(238, 215, 215);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#footer p {
+    color: white;
+    float: right;
+    margin-right: 20px;
+}
+
+/* Additional styles for mess menu */
+.day-menu {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.day-menu h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.day-menu ul {
+    list-style-type: none;
+}
+
+.day-menu ul li {
+    margin-bottom: 10px;
+}
+
+/* Add this CSS to your existing stylesheet */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: right;
+}
+
+li img {
+    max-width: 50%;
+    height: 10;
+    margin-right: 10px; /* Adjust as needed for spacing between image and text */
+}
+.day-menu h2{
+    color: blue;
+}
+.day-menu ul {
+    color: rgb(27, 30, 29);
+    font-size: normal;
+ 
+}
+.day-menu ul li img{
+    height: 100px;
+    width: 33.33%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    float: left;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.coloumn{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+
+}
+.coloumn2{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
